@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-1">
+        <h2>Challenge 1: BlackJack</h2>
+        <div class = "score-container">
+            <div class="human-score-div">
+                <h3>Your Score: <span id = "human-score">0</span></h3>
+
+            </div>
+            <div class="bot-score-div">
+                <h3>Computer Score: <span id = "bot-score">0</span></h3>
+            </div>
+        </div>
+
+        <div class = "container-2">
+            <div id = "human-div" class = "human-table">
+                <div class = "button" id="btn">
+                    <button id = "green">HIT</button>
+                    <button id = "yellow">STAND</button>
+                    <button id = "red">DEAL</button>
+                </div>
+                <div id = "your-cards"></div>
+            </div>
+            <div class = "bot-table">
+                <div id = "bot-cards"></div>
+            </div>
+        </div>
+
+
+        <div class="table-scoring">
+            <table>
+                <caption>Scoring</caption>
+                <thead>
+                    <tr>
+                        <td>Wins</td>
+                        <td>Losses</td>
+                        <td>Draws</td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td><span id = "wins">0</span></td>
+                        <td><span id = "losses">0</span></td>
+                        <td><span id = "draws">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    <script src="blkjck.js"></script>
+</body>
+</html>
